@@ -1,0 +1,11 @@
+.content-table{
+    width: 100%;
+}
+.content-table,th,td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+img {
+    height: 40px;
+    width: 70px;
+}
