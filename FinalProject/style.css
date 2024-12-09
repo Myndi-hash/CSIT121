@@ -1,0 +1,36 @@
+.body-subhomepage {
+    color: brown;
+    background-color: bisque;
+}
+
+.body-main {
+    color: brown;
+    background-color: bisque;
+}
+.body-guinea {
+    background-color: bisque;
+    color: brown;
+}
+
+.guinea {
+    width: 300px;
+    height: auto;
+}
+.final {
+    display: block;
+    border-bottom: 5px solid transparent;      
+}
+
+.special {
+    text-align: center;
+    display: block
+}
+
+.homepage-footer {
+    color: brown;
+    text-align: center;
+    font-size: 80%;
+    border: 1px solid wheat;
+    background: transparent;
+
+}

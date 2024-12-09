@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic</title>
+    <style>
+
+        #container{
+            width: 100%;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+          
+            margin-bottom: 20px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        section p, section ul, section li, section ol {
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+            gap:15px;
+        }
+
+        ul:hover{
+            transition: all .55s ease;
+            transform: translateX(10px);
+
+        }
+
+        ol:hover{
+            transition: all .55s ease;
+            transform: translateX(10px);
+        }
+
+        p:hover{
+            transition: all .55s ease;
+            transform: translateX(10px);
+
+        }
+
+        h1, h2, h3,h4, h5,h6 {
+            display: inline-block;
+            font-size: 25px;
+            color: red;
+            padding: 20px;
+            gap: 10px;
+            background-color: burlywood;
+            
+        }
+
+        h6:hover{
+            display: inline-block;
+            transition: all .55s ease;
+            transform: translateX(10px);
+        }
+
+        h1:hover{
+            transition: all .55s ease;
+            transform: translateX(10px);
+            display: inline-block;
+
+        }
+        
+        header {
+            background-color: chocolate;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: wheat;
+            color: white;
+            padding: 1em;
+            text-align:start;
+            font-weight: bold;
+            
+        }
+
+        @media only screen and (max-width: 600px) {
+            #container {
+                flex-direction: column;
+            }
+            body {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            /* for desktop: */
+            body{
+                background-color: #ececec;
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+            
+           
+          #container{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+          }
+          nav {
+            grid-column: 1 / 2;
+            padding-left: 15px;
+          }
+          main {
+            grid-column: 2 / 3;
+          }
+
+        }
+
+        footer{
+            text-align: center;
+            font-size: 80%;
+            border: 1px solid wheat;
+            background: transparent;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#lab01-and-lab02">Lab01 and Lab02</a></li>
+            <li><a href="#aboutwhatilearned">What I Learned</a></li>
+            <li><a href="#about-lab05">Lab05</a></li>
+        </ul>
+    </nav>
+
+        <h1>Learning Web Standards</h1>
+
+    </header>
+    <main>
+        <section id="lab01-and-lab02">
+            <h2>Labs 1 & 2</h2>
+            <p>Published on September 11, 2024 by the Student.</p>
+            <p> My first webpage! When I started this assignment;
+                I was a bit confused and it seemd like I would not 
+                be able to do it. As I started, after following instructions
+                given; it became more clear and understanbable. I always go 
+                back to read the course or the practices to see where I might have 
+                difficulties. HTML BASICS helped me to have  better comprehension of 
+                webpages and how they are conceived and displayed.
+            </p>
+
+        </section>
+
+        <section id="aboutwhatilearned">
+
+            <h3>What I Learned</h3>
+
+            <p> I learned a lot form these two labs.I learned:
+                <ul>
+                    <li>how to create, manage and save files</li>
+                    <li>how to copy files on my github account successfully</li>
+                    <li>what is HTML, and HTML webpages,</li>
+                    <li>how to display an HTML webpage.</li>
+                </ul>
+               <p>Besides that, I learned about: </p> 
+                <ol>
+                    <li>HTML tags, tags are enclosed in angle brackets and symbols,</li>
+                    <li>All tags should be lowercase</li>
+                    <li>Tags can be nested</li>
+                    <li>Tags can have attributes</li>
+                </ol>
+            
+         </section>
+
+        <section id="Notes"> 
+
+            <h4>Notes for Lab02 and Lab03</h4>
+
+            <p> I learned a lot from lab2 and lab03</p>
+
+            <p> From lab02 , I learned about the basics of HTML, how to procede when I 
+                am planning on creating a website based on the webpage content. Since a website consists 
+                of many files,as text content, codes, stylesheet, media content,links, and so on; I learned
+                how to assembles after creating files for the project into a sensible structure before uploading
+                onto the server online. Minimizing errors during file's and folfer naming process by using lowercase
+                with no space, because many web servers  are case sensitive. Also, I learned that HTML is a markup 
+                language use to structure a webpage and it's content. HTML uses a series of elements, to enclose,
+                or wrap, different parts of the conten to make it appear a certain way or behave 
+                in a certain way.
+                The anatomy of an HTML  element is: 
+                <ol>
+                    <li>The opening tag;</li>
+                    <li>The closing tag;</li>
+                    <li>The content, which is what is found inside both tags;</li>
+                    <li>The element, which is represented by the opening tag, the closing tag, and the content.</li>
+                    <li> Element can have attributes(an attribute contain extra information
+                        about the element that you don't want to appear on the actual content)</li>
+                </ol>
+            
+            <p> In lab03, I learned more about CSS basics, CSS stands for Cascade style Sheet. The purpose of CSS is
+                to describe how HTML element are to be displayed on screen,paper, or in another media type. CSS is used
+                by designers to define styles for web pages, including the alyout and variation in display and the design
+                for various devices. Additionally, I learned that the style definition is saved normally in external .css file.
+                Css allows for a better control of web pages color, font, size of text, the spacing between elements,and the specific
+                background images or colors are to be displayed.Css can also be added in three ways:
+                <ul>
+                    <li>Inline, by using the style attribute inside HTML elements</li>
+                    <li>Internal, by using a style element in the head section</li>
+                    <li>External, by using a link element to link to an external css file.
+                </ul>
+               <p>Also, I learned about the CSS color, font-family, and font-size properties to be used. CSS selector are used to find
+                or select the HTML element that will be styled. CSS selectors are divided into five categories:
+                <ul>
+                    <li>Simple selector: which select elements based on name,id,class.</li>
+                    <li>Combinator selectors: which select elements based on a specific relationship between them.</li>
+                    <li>Pseudo-class selectors: Used to select elements based on certain state.</li>
+                    <li>Pseudo-elements selectors: Select and style a part of an element.</li>
+                    <li>Attribute selectors: Select elements based on an attribute or attribute value.</li>
+                </ul>
+            
+            </section>
+    
+
+
+
+        <section id="about-lab05">
+            <h6>Lab05 Blog Post</h6>
+            <p>
+                Lab#05 was different for me, I learned more about responsive
+                layout using CSS, javascript and HTML. Page layout.I learned about 
+                normal flow, which the way a webpage elements lay themselves out by default;
+                the float property used by developers to impliment
+                layout involving an image floating inside a column of 
+                text, with the text wrapping around the left or right 
+                of it. The one dimensional layout method for arranging items in rows or columns; Flexbox.
+                Flexbox layout enables the developer to vertically center content block 
+                inside its parent.And CSS grid layout which is two dimensional layout system for web design. 
+            </p>
+
+
+
+
+
+
+
+        </section>
+  
+        <section id="resources">
+
+            <h5>Resources</h5>
+
+            <ul>
+                <li> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like">
+                        Read more here about website building</a>  </li>
+
+                   <li><a href="https://www.w3schools.com/css/css_intro.asp">CSS Introduction</a> </li> 
+
+                    <li><a href="https://www.w3schools.com/html/html_css.asp">HTML Styles - CSS</a> </li> 
+
+                    <li> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started">Getting Started with CSS</a> </li> 
+                    <li> <a href="sub-homepage.html">Back </a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 The student.All right reserved.</p>
+    </footer>
+</div>
+  
+</body>
+</html>
